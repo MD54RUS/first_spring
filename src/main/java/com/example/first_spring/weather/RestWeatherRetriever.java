@@ -21,12 +21,12 @@ public class RestWeatherRetriever implements WeatherRetriever {
     }
 
     @Override
-    public String getForecast() {
+    public ForecastImportDTO getForecast() {
 //        headers.add("x-rapidapi-host","community-open-weather-map.p.rapidapi.com");
 //        headers.add("x-rapidapi-key","5ca16e2f72msh712306e3d9e9d42p1949f4jsn3de39cad8c90");
 //        RequestEntity requestEntity = new RequestEntity(headers, HttpMethod.GET, URI);
 //        ResponseEntity<String> result = restTemplate.exchange(requestEntity, String.class);
-        ResponseEntity<String> result = restTemplate.getForEntity(API_URL + GetApiKey.getKey() + "&q=Novosibirsk&days=1", String.class);
+        ResponseEntity<ForecastImportDTO> result = restTemplate.getForEntity(API_URL + GetApiKey.getKey() + "&q=Novosibirsk&days=1", ForecastImportDTO.class);
         return result.getBody();
     }
 }
