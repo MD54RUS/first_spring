@@ -1,6 +1,7 @@
 package com.example.first_spring.weather;
 
 import com.example.first_spring.FirstSpringApplication;
+import com.example.first_spring.weather.DTO.ForecastImportDTO;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

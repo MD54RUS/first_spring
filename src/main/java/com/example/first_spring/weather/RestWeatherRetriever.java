@@ -1,5 +1,6 @@
 package com.example.first_spring.weather;
 
+import com.example.first_spring.weather.DTO.ForecastImportDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
