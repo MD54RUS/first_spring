@@ -1,5 +1,7 @@
 package com.example.first_spring.weather.DTO;
 
+import java.util.List;
+
 public class ForecastWeather {
-    ForecastDay[] forecastDays;
+    public List<ForecastDay> forecastDays;
 }
