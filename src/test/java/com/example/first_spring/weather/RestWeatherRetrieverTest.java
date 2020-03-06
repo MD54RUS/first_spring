@@ -23,7 +23,7 @@ class RestWeatherRetrieverTest {
 
   @Test
   void getForecast() {
-    ForecastImportDTO result = weatherRetriever.getForecast();
+    ForecastImportDTO result = weatherRetriever.getForecast("Novosibirsk");
     System.out.println(result);
   }
 }
